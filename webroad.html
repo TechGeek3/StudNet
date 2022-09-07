@@ -14,6 +14,7 @@
    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
    <!-- custom css file link  -->
+   <link rel="stylesheet" href="css\roadmap.css">
    <link rel="stylesheet" href="css\style.css">
 
 </head>
@@ -44,6 +45,8 @@
 
    <!-- account form section starts  -->
 
+   <!-- account form section starts  -->
+
    <div class="account-form">
 
       <div id="close-form" class="fas fa-times"></div>
@@ -53,25 +56,61 @@
          <span class="btn register-btn">register</span>
       </div>
 
-      <form class="login-form active" action="">
-         <h3>login now</h3>
-         <input type="email" placeholder="enter your email" class="box">
-         <input type="password" placeholder="enter your password" class="box">
-         <div class="flex">
-            <input type="checkbox" name="" id="remember-me">
-            <label for="remember-me">remember me</label>
-            <a href="#">forgot password?</a>
+      <div class="login-form form active">
+         <div class="">
+            <div class="section text-center">
+               <h3 class="mb-4 pb-3 text-light">Log In</h3>
+               <div class="form-group">
+                  <input type="email" name="logemail" class="form-style box" placeholder="Your Email" id="logemail"
+                     autocomplete="off">
+                  <!-- <i class="input-icon uil uil-at"></i> -->
+               </div>
+               <div class="form-group mt-2">
+                  <input type="password" name="logpass" class="form-style box" placeholder="Your Password" id="logpass"
+                     autocomplete="off">
+                  <!-- <i class="input-icon uil uil-lock-alt"></i> -->
+               </div>
+               <input type="submit" value="Submit" class="btn mt-4" id="login">
+               </form>
+               <p class="mb-0 mt-4 text-center flex"><a href="#0" class="link">Forgot your
+                     password?</a></p>
+            </div>
          </div>
-         <input type="submit" value="login now" class="btn">
-      </form>
+         <a class="btn btn-google m-b-20 mx-auto " id='googleLogin'>
+            <img src="images/icon-google.png" alt="GOOGLE">
+            Google
+         </a>
+      </div>
 
-      <form class="register-form" action="">
-         <h3>register now</h3>
-         <input type="email" placeholder="enter your email" class="box">
-         <input type="password" placeholder="enter your password" class="box">
-         <input type="password" placeholder="confirm your password" class="box">
-         <input type="submit" value="register now" class="btn">
-      </form>
+      <div class="register-form form">
+         <div class="">
+            <div class="section text-center">
+               <h3 class="mb-4 pb-3 text-light">Sign Up</h3>
+               <div class="form-group">
+                  <input type="text" name="regname" class="form-style box" placeholder="Your Full Name" id="regname"
+                     autocomplete="off">
+                  <!-- <i class="input-icon uil uil-user"></i> -->
+               </div>
+               <div class="form-group mt-2">
+                  <input type="email" name="regemail" class="form-style box" placeholder="Your Email" id="regemail"
+                     autocomplete="off">
+                  <!-- <i class="input-icon uil uil-at"></i> -->
+               </div>
+               <div class="form-group mt-2">
+                  <input type="password" name="regpass" class="form-style box" placeholder="Your Password" id="regpass"
+                     autocomplete="off">
+                  <!-- <i class="input-icon uil uil-lock-alt"></i> -->
+               </div>
+               <a href="#" class="btn mt-4" id="register">Register Now</a>
+            </div>
+         </div>
+         <a class="btn btn-google m-b-20 mx-auto " id='googleregister'>
+            <img src="images/icon-google.png" alt="GOOGLE">
+            Google
+         </a>
+      </div>
+
+
 
    </div>
 
@@ -84,10 +123,125 @@
 
       <h1 class="heading"> Web Development Roadmap </h1>
 
-      <div class="box-container">
+
+      <section class="roadmap-webd">
+         <div class="wrapper">
+            <div class="center-line">
+               <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+            </div>
+            <div class="row row-1">
+               <section>
+                  <i class="icon fas fa-home"></i>
+                  <div class="details">
+                     <span class="title">HTML</span>
+                     <span>3hr 30min</span>
+                  </div>
+                  <p>
+                  <ul>
+                     <li>Learn the basics of HTML
+                     <li>Writing Semantic HTML
+                     <li>Forms and Validations
+                     <li>Conventions and Best Practices
+                     <li>Accessibility
+                     <li>SEO Basics
+                  </ul>
+                  </p>
+                  <div class="bottom">
+                     <a href="#">Read more</a>
+
+                  </div>
+               </section>
+            </div>
+            <div class="row row-2">
+               <section>
+                  <i class="icon fas fa-star"></i>
+                  <div class="details">
+                     <span class="title">CSS</span>
+                     <span>6hr 30min</span>
+                  </div>
+                  <p>
+                  <ul>
+                     <li>Learn the basics of CSS.
+                     <li>Making layouts (Floats, Positioning,
+                     <li>Display, Box Mode, CSS Grid, Flex box).
+                     <li>Responsive design and Media Queries.
+                  </ul>
+                  </p>
+                  <div class="bottom">
+                     <a href="#">Read more</a>
+
+                  </div>
+               </section>
+            </div>
+            <div class="row row-1">
+               <section>
+                  <i class="icon fas fa-rocket"></i>
+                  <div class="details">
+                     <span class="title">Project Using HTML & CSS</span>
+
+                     <span>2hr 58min</span>
+                  </div>
+                  <p></p>
+                  <div class="bottom">
+                     <a href="#">Read more</a>
+                     <i>Project</i>
+                  </div>
+               </section>
+            </div>
+            <div class="row row-2">
+               <section>
+                  <i class="icon fas fa-globe"></i>
+                  <div class="details">
+                     <span class="title">JavaScript</span>
+                     <span>1hr 25min</span>
+                  </div>
+                  <p>
+                  <ul>
+                     <li>Syntax and Basic Constructs
+                     <li>Learn DOM Manipulation
+                     <li>Learn Fetch API / Ajax (XHR)
+                     <li>ES6+ and modular JavaScript
+                  </ul>
+                  </p>
+                  <div class="bottom">
+                     <a href="#">Read more</a>
+
+                  </div>
+               </section>
+            </div>
+            <div class="row row-1">
+               <section>
+                  <i class="icon fas fa-paper-plane"></i>
+                  <div class="details">
+                     <span class="title">Build Blackjack Game
+                     </span>
+                     <span>3hr 5min</span>
+                  </div>
+                  <p></p>
+                  <div class="bottom">
+                     <a href="#">Read more</a>
+                     <i>Project</i>
+                  </div>
+               </section>
+            </div>
+            <div class="row row-2">
+               <section>
+                  <i class="icon fas fa-map-marker-alt"></i>
+                  <div class="details">
+                     <span class="title">Build Chrome Extension</span>
+                     <span>2hr 50min</span>
+                  </div>
+                  <p></p>
+                  <div class="bottom">
+                     <a href="#">Read more</a>
+                     <i>Project</i>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </section>
 
 
-      </div>
    </section>
    <!-- roadmap section ends -->
 

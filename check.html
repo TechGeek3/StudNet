@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Easiest Way to Add Input Masks to Your Forms</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
@@ -18,7 +20,8 @@
         });
         </script> -->
 </head>
-  <body>
+
+<body>
 
     <div class="registration-form">
         <form id="form">
@@ -40,7 +43,7 @@
         </div> -->
 
 
-        <!-- </div> -->
+            <!-- </div> -->
 
             <!-- <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
                 <span style="font-size: 20px; background-color: #F3F5F6; padding: 0 10px; border-radius: 50%;">
@@ -55,20 +58,22 @@
                 <input type="text" class="form-control item" id="branch" placeholder="Branch" required>
             </div>
 
-            <select  class="form-control item" placeholder="Graduation Year" required name="year" id="year" style="padding: 0 18px; height: 47px;">
-              <option value="2022">Graduation Year</option>
-            <option value="2023">2023</option>
-            <option value="2024">2024</option>
-            <option value="2025">2025</option>
-            <option value="2026">2026</option>
-          </select>
+            <select class="form-control item" placeholder="Graduation Year" required name="year" id="year"
+                style="padding: 0 18px; height: 47px;">
+                <option value="2022">Graduation Year</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+            </select>
 
 
-          <input required="" type="text" class="form-control item" id="dateofbirth" placeholder="Date of Birth"  required onfocus="(this.type='date')"/>
+            <input required="" type="text" class="form-control item" id="dateofbirth" placeholder="Date of Birth"
+                required onfocus="(this.type='date')" />
             <!-- <div class="form-group">
                 <input type="text" class="form-control item" id="year" placeholder="Graduation Year" required> -->
 
-                <!-- <label for="year" class="form-control item"></label>
+            <!-- <label for="year" class="form-control item"></label>
 <select name="year" id="year">
     <option value="2022">Graduation Year</option>
     <option value="2022">2022</option>
@@ -83,7 +88,7 @@
             </div> -->
             <!-- <div class="form-group">
                 <!-- <input type="tel" class="form-control item" id="phone-number" placeholder=" Phone Number 12345 12345" pattern="[0-9]{3} [0-9]{3} [0-9]{4} " maxlength="12" > -->
-                <!-- <input type="tel"  class="form-control item" name="phone" id="phone" placeholder="0123456789" pattern="[0-9]{10}" maxlength="10" required>
+            <!-- <input type="tel"  class="form-control item" name="phone" id="phone" placeholder="0123456789" pattern="[0-9]{10}" maxlength="10" required>
             </div> -->
             <!-- <div class="form-group">
                 <input type="text" class="form-control item" id="birth-date" placeholder="Birth Date">
@@ -93,7 +98,7 @@
                 <button onclick="enable()" type="button" class="btn btn-block create-account" id="number" disabled >Send OTP</button>
             </div> -->
 
-             <!-- <input type="tel" id="phoneNumber" />
+            <!-- <input type="tel" id="phoneNumber" />
             <input type="text" id="code" />
             <button id="sign-in-button" onclick="submitPhoneNumberAuth()">
               SIGN IN WITH PHONE
@@ -121,24 +126,25 @@
             </div> -->
             <div class="form-group">
                 <!-- <button type="button" class="btn btn-block create-account" id="signup">Sign Up</button> -->
-                <button type="submit" class="btn btn-block create-account"  onclick="UserRegister()" id="signup" >Sign Up</button>
+                <button type="submit" class="btn btn-block create-account" onclick="UserRegister()" id="signup">Sign
+                    Up</button>
             </div>
         </form>
-       
+
     </div>
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="registration/assets/js/script.js"></script> -->
 
-    
+
 </body>
-   
 
-    <!-- Add the latest firebase dependecies from CDN -->
-    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
 
-    <script>
+<!-- Add the latest firebase dependecies from CDN -->
+<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+
+<script>
       // Paste the config your copied earlier
     //   var firebaseConfig = {
 
@@ -196,7 +202,7 @@
       //       console.log(user);
       //       if(document.getElementById("code").value==code){
       //         alert('hello');
-      //       }  
+      //       }
       //     })
       //     .catch(function(error) {
       //       console.log(error);
@@ -213,7 +219,7 @@
     //     }
     //   });
     // </script>
-    <!-- <script>
+<!-- <script>
       function enable(){
         document.getElementById("otp").disabled = "";
         document.getElementById("password").disabled = "";
@@ -221,9 +227,9 @@
   
       }
     </script> -->
-  
-  
-  <!-- <script>
+
+
+<!-- <script>
       var fields = " #college, #branch, #year ,#dateofbirth  ,#phone";
       var final= "#otp , #password ,#confirm_password ";
   
@@ -264,9 +270,9 @@
       return filled;
   }
   </script> -->
-  
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <!-- <script type="text/javascript">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!-- <script type="text/javascript">
       $(function () {
           $("#signup").click(function () {
               var password = $("#password").val();
@@ -280,11 +286,12 @@
   );
       });
   </script> -->
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
 <script src="registration/assets/js/auth2.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="server.js"></script>
 </body>
 <!-- <script src="registration/assets/js/auth2.js"></script> -->
+
 </html>
